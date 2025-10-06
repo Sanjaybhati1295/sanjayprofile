@@ -1,11 +1,15 @@
 const SkillsSection = () => {
 	const skills = [
 		{
-			category: 'Languages & Frontend',
-			items: ['Apex (Salesforce)', 'JavaScript', 'Basic Python', 'Lightning Web Components (LWC)', 'HTML', 'CSS', 'Bootstrap'],
+			category: 'Cloud & DevOps',
+			items: ['Salesforce Cloud: Sales, Service, Experience Cloud', 
+				'AWS: Lambda, S3, API Gateway, CloudFront, ALB, Route 53, IAM, Bedrock, Transcribe, Redshift, Step Functions', 
+				'CI/CD Pipelines (GitHub Actions, Brazil CDK, CloudFormation)',
+				'Security & Compliance: IAM Policies, GDPR workflows, PII data handling'
+			],
 			icon: (
 				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
-					<path d="M8 3v3a2 2 0 01-2 2H3m18 0h-3a2 2 0 01-2-2V3M3 16v3a2 2 0 002 2h3m8-2h3a2 2 0 002-2v-3" />
+					<path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
 				</svg>
 			),
 		},
@@ -21,15 +25,11 @@ const SkillsSection = () => {
 			),
 		},
 		{
-			category: 'Cloud & DevOps',
-			items: ['Salesforce Cloud: Sales, Service, Experience Cloud', 
-				'AWS: Lambda, S3, API Gateway, CloudFront, ALB, Route 53, IAM, Bedrock, Transcribe, Redshift, Step Functions', 
-				'CI/CD Pipelines (GitHub Actions, Brazil CDK, CloudFormation)',
-				'Security & Compliance: IAM Policies, GDPR workflows, PII data handling'
-			],
+			category: 'Languages & Frontend',
+			items: ['Apex (Salesforce)', 'JavaScript', 'Basic Python', 'Lightning Web Components (LWC)', 'HTML', 'CSS', 'Bootstrap'],
 			icon: (
 				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
-					<path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+					<path d="M8 3v3a2 2 0 01-2 2H3m18 0h-3a2 2 0 01-2-2V3M3 16v3a2 2 0 002 2h3m8-2h3a2 2 0 002-2v-3" />
 				</svg>
 			),
 		},
@@ -45,11 +45,11 @@ const SkillsSection = () => {
 	];
 
 	return (
-		<div className="py-6 bg-white bg-gray-900 px-6">
+		<div className="py-6 dark:bg-gray-900 px-6">
 			<div className="space-y-4">
 				<div>
 					<h3 className="text-2xl font-semibold text-gray-900 text-white text-center md:text-left">Core Skills</h3>
-					<div className="h-px w-full bg-gray-200 bg-gray-700 mt-2" />
+					<div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -57,13 +57,13 @@ const SkillsSection = () => {
 						<div key={skillGroup.category}>
 							<div className="flex items-center space-x-2 mb-2">
 								{skillGroup.icon}
-								<h4 className="text-sm font-medium text-gray-200"><b>{skillGroup.category}</b></h4>
+								<h4 className="text-xl font-medium text-gray-400"><b>{skillGroup.category}</b></h4>
 							</div>
 							<div className="flex flex-wrap gap-1.5">
 								{skillGroup.items.map((skill) => (
 									<span
 										key={skill}
-										className="px-2.5 py-1 text-sm bg-gray-50 bg-gray-800 text-gray-700 text-gray-300 rounded-full ring-1 ring-gray-200 ring-gray-700"
+										className="px-2.5 py-1 text-sm bg-gray-800 text-gray-100 rounded-full ring-1 ring-gray-700 dark:ring-gray-800"
 									>
 										{skill}
 									</span>
