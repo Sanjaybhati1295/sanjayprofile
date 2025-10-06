@@ -1,28 +1,34 @@
 const ExperienceSection = () => {
 	const experiences = [
 		{
-			role: 'Senior Software Engineer',
-			company: 'Tech Corp',
-			period: '2020 - Present',
-			highlights: 'Led development of microservices architecture, 40% improvement in system performance',
+			role: 'Application Engineer 2',
+			company: 'Amazon Seller Services Pvt. Ltd.',
+			period: 'Feb 2022 - Present',
+			highlights: 'Designed and delivered scalable Salesforce & AWS solutions (Telephony, AM Hub, CosmoConnect) improving seller management and compliance; led architecture, automation, and AI integrations to boost productivity and data security.',
 		},
 		{
-			role: 'Software Engineer',
-			company: 'Innovation Labs',
-			period: '2017 - 2020',
-			highlights: 'Architected cloud-native applications, mentored junior developers',
+			role: 'Consultant',
+			company: 'Capgemini Pvt. Ltd.',
+			period: 'Aug 2021 - Feb 2022',
+			highlights: 'Managed full migration from Salesforce Classic to Lightning, ensuring seamless transition and improved user experience. Collaborated with stakeholders to analyze requirements and deliver Salesforce solutions that streamlined and optimized financial workflows.',
 		},
 		{
-			role: 'Full Stack Developer',
-			company: 'StartUp Inc',
-			period: '2015 - 2017',
-			highlights: 'Built scalable web applications using React and Node.js',
+			role: 'Sr. Salesforce Developer',
+			company: 'Dazeworks',
+			period: 'April 2019 - Aug 2021',
+			highlights: 'Led a team of developers across multiple Salesforce projects, providing strategic solutions to complex client challenges. Mentored and trained junior developers, fostering skill growth and ensuring high-quality deliverables.',
+		},
+		{
+			role: 'Associate Developer',
+			company: 'Ibirds Pvt. Ltd.',
+			period: 'Dec 2016 - April 2019',
+			highlights: 'Managed Salesforce security configurations to ensure data protection and compliance with best practices. Automated business processes with workflow tools and implemented Salesforce Communities to boost customer engagement.',
 		},
 	];
 
 	return (
 		<div className="py-6 bg-white dark:bg-gray-900 px-6">
-			<div className="space-y-4 max-w-2xl mx-auto">
+			<div className="space-y-4">
 				<div>
 					<h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">Experience</h3>
 					<div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />

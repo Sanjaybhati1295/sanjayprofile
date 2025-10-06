@@ -7,7 +7,7 @@ export default function MinimalistPortfolio() {
 		<main className="min-h-screen md:h-screen flex flex-col bg-white dark:bg-gray-900 pb-16 sm:pb-0">
 			<div className="flex-1 grid grid-cols-1 md:grid-cols-5">
 				{/* Left Column - Profile */}
-				<div className="md:col-span-2 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:flex md:items-center">
+				<div className="md:col-span-2 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:flex pt-1">
 					<ProfileSection />
 				</div>
 
